@@ -53,7 +53,10 @@ nav {
                 0 0 3px black,
                 0 0 1px black;
 }
-
+.cards_index:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 #footer_index {
     margin-top: 22%;
     text-align: center;
@@ -76,9 +79,9 @@ nav {
     border-radius: 15px;
 }
 .card:hover {
-    transform: scale(2);
+    transform: scale(2.3);
 }
-.cards{
+.card_livro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +90,7 @@ nav {
     width: 100%;
     
 }
-.cards img{
+.card_livro img{
     border-radius: 15px;
     width: 150px;
     height: 200px;
@@ -98,4 +101,37 @@ nav {
     text-align: center;
     color: white;
     background-color: rgba(0,0,0,0.5);
+}
+#filmes{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/background/filmes_background.jpg");
+    background-size: cover;
+    background-repeat: repeat,no-repeat;
+    width: 100%;
+    font-family: "Italiana", sans-serif;
+}
+.card_filmes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 2em;
+    width: 100%;
+    
+}
+.card_filmes img{
+    border-radius: 15px;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+}
+#footer_filmes{
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+h3{
+    margin-top: 100px;
+    height: 120px;
+    width: 150px;
 }
